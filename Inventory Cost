@@ -1,0 +1,5 @@
+SELECT product_id, product_category, product_name, cost, sold_at
+FROM bigquery-public-data.thelook_ecommerce.inventory_items
+WHERE sold_at IS NULL
+AND cost >200
+ORDER BY cost DESC
